@@ -1,0 +1,10 @@
+<%- include('partials/header'); -%>
+
+<% posts.forEach((post) => { %>
+  <div class="nc">
+    <a href="/<%= post.title %>"><h1><%= post.title %></h1></a>
+    <p><%= post.content.substr(0,75)+" ..."; %></p>
+  </div>
+<% }) %>
+
+<%- include('partials/footer'); -%>
